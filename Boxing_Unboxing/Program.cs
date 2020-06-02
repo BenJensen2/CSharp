@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Multiplication_Table
+namespace Boxing_Unboxing
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] array2D = new int[10,10];
-            Console.WriteLine(array2D);
+            object emptyList = "";
+            Console.WriteLine("Hello World!");
         }
     }
 }

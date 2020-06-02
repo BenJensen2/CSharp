@@ -1,0 +1,11 @@
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.deps.json
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.json
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.dev.json
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.pdb
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csprojAssemblyReference.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csproj.CoreCompileInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfoInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfo.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.pdb

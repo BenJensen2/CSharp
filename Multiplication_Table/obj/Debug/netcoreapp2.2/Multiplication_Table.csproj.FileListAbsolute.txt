@@ -1,0 +1,11 @@
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/bin/Debug/netcoreapp2.2/Multiplication_Table.deps.json
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/bin/Debug/netcoreapp2.2/Multiplication_Table.runtimeconfig.json
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/bin/Debug/netcoreapp2.2/Multiplication_Table.runtimeconfig.dev.json
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/bin/Debug/netcoreapp2.2/Multiplication_Table.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/bin/Debug/netcoreapp2.2/Multiplication_Table.pdb
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.csprojAssemblyReference.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.csproj.CoreCompileInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.AssemblyInfoInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.AssemblyInfo.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Multiplication_Table/obj/Debug/netcoreapp2.2/Multiplication_Table.pdb
