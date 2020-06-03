@@ -191,13 +191,21 @@ namespace Basic13
 
         public static object[] NumToString(int[] numbers)
         {
-            object numstr = numbers as object;
-            for(int val = 0; val<numbers.Length; val++)
+            object[] array = new object [numbers.Length];
+            for (int i=0; i<numbers.Length; i++)
             {
-                if(numstr[val]<0){
-                    numstr[val] = "Dojo";
+                if (numbers[i] < 0)
+                {
+                    array[i] = "Dojo";
+                    
+                }
+                else
+                {
+                    array[i] = numbers[i];
                 }
             }
+            Console.WriteLine("[{0}]", string.Join(", ", array));
+            return array;
             // Write a function that takes an integer array and returns an object array 
             // that replaces any negative number with the string 'Dojo'.
             // For example, if array "numbers" is initially [-1, -3, 2] 
@@ -222,6 +230,7 @@ namespace Basic13
             // EliminateNegatives(numbers);
             // MinMaxAverage(numbers);
             // ShiftValues(numbers);
+            NumToString(numbers);
 
         }
     }
