@@ -1,15 +1,14 @@
 ﻿using System;
 
-namespace Humans
+namespace HungryNinja
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Human Dan = new Human("Dan");
-            Dan.Love(Dan);
-            Console.WriteLine(Dan.Health);
+            Buffet trial = new Buffet();
+            Console.WriteLine(trial.Serve().Name);
         }
     }
 }

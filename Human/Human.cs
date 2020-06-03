@@ -8,7 +8,7 @@ namespace Humans
         public int Dexterity;
         private int health;
         
-        public int Health {get;}
+        public int Health {get{return health;}}
 
         public Human(string name){
             Name = name;

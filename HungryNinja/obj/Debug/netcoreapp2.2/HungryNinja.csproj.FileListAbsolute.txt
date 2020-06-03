@@ -1,0 +1,11 @@
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.deps.json
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.json
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.dev.json
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.pdb
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csprojAssemblyReference.cache
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csproj.CoreCompileInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfoInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfo.cs
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/ben/Desktop/Dojo_assignments/C#/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.pdb
