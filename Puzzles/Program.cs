@@ -74,18 +74,26 @@ namespace Puzzles
             names.Add("Geneva");
             names.Add("Sydney");
 
-            for (int i =1;i < names.Count; i++)
+            for (int i =0;i < names.Count; i++)
             {
                 Random num = new Random();
                 rand = num.Next(1,names.Count);
                 temp = names[rand];
                 names[rand] = names[i];
                 names[i] = temp;
+            }
 
+            for (int i =0;i < names.Count; i++)
+            {
                 Console.WriteLine("i" + names[i]);
+            }
+
+            for (int i =0;i < names.Count; i++)
+            {
                 if (names[i].Length<6)
                 {
                     names.Remove(names[i]);
+                    i--;
                 }
             }
 
@@ -98,7 +106,7 @@ namespace Puzzles
             RandomArray();
             TossCoin();
             TossMultipleCoins(22);
-            Names();
+            Console.WriteLine(Names()[3]);
         }
     }
 }
