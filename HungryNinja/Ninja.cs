@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace HungryNinja
 {
@@ -15,6 +16,7 @@ namespace HungryNinja
         {
             get{
                 if (calorieIntake > 1200){
+                    Console.WriteLine("Ninja is full and cannot eat anymore");
                     return true;
                     // string full = "Yes";
                 }
@@ -26,7 +28,29 @@ namespace HungryNinja
 
         public void Eat(Food item)
         {
-            Ninja.calorieIntake = 
+            if (this.IsFull==false)
+            {
+                string flavor = "";
+                this.calorieIntake += item.Calories;
+                FoodHistory.Add(item);
+                if (item.IsSpicy && item.IsSweet)
+                {
+                    flavor = "Spicy and Sweet!";
+                }
+                else if (item.IsSpicy)
+                {
+                    flavor = "Spicy!";
+                }
+                else if (item.IsSweet)
+                {
+                    flavor = "Sweet!";
+                }
+                else
+                {
+                    flavor = "Bland";
+                }
+                Console.WriteLine(item.Name + " is " + flavor);
+            }
         }
 
     }

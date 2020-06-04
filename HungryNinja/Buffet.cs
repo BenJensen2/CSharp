@@ -23,7 +23,9 @@ namespace HungryNinja
         public Food Serve()
         {
             
-            return Menu[result];
+            Random num = new Random();
+            int rand = num.Next(0,Menu.Count);
+            return Menu[rand];
         }
         
 
