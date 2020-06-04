@@ -5,10 +5,19 @@ namespace HelloASP
     public class HomeController : Controller
     {
         [HttpGet("")]
-        public string Index()
+
+        public ViewResult Razor()
         {
-            return "This is my Index!";
+            return View();
         }
+        // public ViewResult HiThere()
+        // {
+        //     // return "This is my Index!";
+        //     // Views/Home/HiThere.cshtml
+        //     // Views/Shared/HiThere.cshtml
+        //     return View();
+        //     // return View("Index");
+        // }
 
         [HttpGet("projects")]
         public string Projects()

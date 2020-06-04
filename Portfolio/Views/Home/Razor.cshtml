@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor</title>
+</head>
+<body>
+    <h1>Here are some delicious foods!</h1>
+    <ul>
+        @{
+            var StringList = new List<string>
+                {
+                    "Apple Pie",
+                    "Burritos",
+                    "Clams Casino",
+                    "Donuts"
+                };
+
+                foreach(var word in StringList)
+                {
+                    <li
+                    @* @{  char first = word[0];
+                        string strcheck = "c";
+                        char check = strcheck[0];
+                        if (first=strcheck)
+                        {
+                            style="color: ;"
+                        }
+                    }; *@
+                    >@word</li>
+                }
+        }
+    </ul>
+    
+</body>
+</html>

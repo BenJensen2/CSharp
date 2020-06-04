@@ -21,3 +21,5 @@
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.RazorTargetAssemblyInfo.cs
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.Views.pdb
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Portfolio.csproj.CopyComplete
+/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/HiThere.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/Razor.g.cshtml.cs
