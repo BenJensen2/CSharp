@@ -4,136 +4,89 @@ namespace Deck_of_cards
 {
     public class Deck
     {
-        public List<Card> cards;
+        public List<Card> Cards;
         public Deck()
         {
-            cards = new List<Card>()
+            for (int i=1;i<53;i++)
             {
-                new Card("Ace","Hearts",1),
-                new Card("2","Hearts",2),
-                new Card("3","Hearts",3),
-                new Card("4","Hearts",4),
-                new Card("5","Hearts",5),
-                new Card("6","Hearts",6),
-                new Card("7","Hearts",7),
-                new Card("8","Hearts",8),
-                new Card("9","Hearts",9),
-                new Card("10","Hearts",10),
-                new Card("Jack","Hearts",11),
-                new Card("Queen","Hearts",12),
-                new Card("King","Hearts",13),
+                string stringVal = "";
+                string suit = "";
+                int val = 0;
 
-                new Card("Ace","Spades",1),
-                new Card("2","Spades",2),
-                new Card("3","Spades",3),
-                new Card("4","Spades",4),
-                new Card("5","Spades",5),
-                new Card("6","Spades",6),
-                new Card("7","Spades",7),
-                new Card("8","Spades",8),
-                new Card("9","Spades",9),
-                new Card("10","Spades",10),
-                new Card("Jack","Spades",11),
-                new Card("Queen","Spades",12),
-                new Card("King","Spades",13),
+                if (i<14)
+                {
+                    val = i;
+                    suit = "Hearts";
+                }
+                else if (i < 27)
+                {
+                    val = i-13;
+                    suit = "Diamonds";
+                }
 
-                new Card("Ace","Clubs",1),
-                new Card("2","Clubs",2),
-                new Card("3","Clubs",3),
-                new Card("4","Clubs",4),
-                new Card("5","Clubs",5),
-                new Card("6","Clubs",6),
-                new Card("7","Clubs",7),
-                new Card("8","Clubs",8),
-                new Card("9","Clubs",9),
-                new Card("10","Clubs",10),
-                new Card("Jack","Clubs",11),
-                new Card("Queen","Clubs",12),
-                new Card("King","Clubs",13),
+                else if (i < 37)
+                {
+                    val = i-26;
+                    suit = "Spades";
+                }
+                else if (i < 52)
+                {
+                    val = i-36;
+                    suit = "Clubs";
+                }
+                else
+                {
+                    val = 13/i - 13%i;
+                }
 
-                new Card("Ace","Diamonds",1),
-                new Card("2","Diamonds",2),
-                new Card("3","Diamonds",3),
-                new Card("4","Diamonds",4),
-                new Card("5","Diamonds",5),
-                new Card("6","Diamonds",6),
-                new Card("7","Diamonds",7),
-                new Card("8","Diamonds",8),
-                new Card("9","Diamonds",9),
-                new Card("10","Diamonds",10),
-                new Card("Jack","Diamonds",11),
-                new Card("Queen","Diamonds",12),
-                new Card("King","Diamonds",13),
+                if (val==1)
+                {
+                    stringVal = "Ace";
+                }
 
-            };
+                if (val==11)
+                {
+                    stringVal = "Jack";
+                }
 
+                if (val==12)
+                {
+                    stringVal = "Queen";
+                }
+
+                Card card = new Card(stringVal,suit,val);
+                // Cards.Add(card);
+
+                if (i%13==0 && i/13==1)
+                {
+                    set = 1;
+                }
+
+                if (i%13==0 && i/13==2)
+                {
+                }
+
+                if (i%13==0 && i/13==3)
+                {
+                }
+
+            }
 
         }
-        public object Deal()
-        {
-            object card = cards[0];
-            cards.RemoveAt(0);
-            return card;
-        }
 
-        public void Reset() => cards = new List<Card>()
-            {
-                new Card("Ace","Hearts",1),
-                new Card("2","Hearts",2),
-                new Card("3","Hearts",3),
-                new Card("4","Hearts",4),
-                new Card("5","Hearts",5),
-                new Card("6","Hearts",6),
-                new Card("7","Hearts",7),
-                new Card("8","Hearts",8),
-                new Card("9","Hearts",9),
-                new Card("10","Hearts",10),
-                new Card("Jack","Hearts",11),
-                new Card("Queen","Hearts",12),
-                new Card("King","Hearts",13),
 
-                new Card("Ace","Spades",1),
-                new Card("2","Spades",2),
-                new Card("3","Spades",3),
-                new Card("4","Spades",4),
-                new Card("5","Spades",5),
-                new Card("6","Spades",6),
-                new Card("7","Spades",7),
-                new Card("8","Spades",8),
-                new Card("9","Spades",9),
-                new Card("10","Spades",10),
-                new Card("Jack","Spades",11),
-                new Card("Queen","Spades",12),
-                new Card("King","Spades",13),
+    
+        // public object Deal()
+        // {
+        //     object card = cards[0];
+        //     cards.RemoveAt(0);
+        //     return card;
+        // }
 
-                new Card("Ace","Clubs",1),
-                new Card("2","Clubs",2),
-                new Card("3","Clubs",3),
-                new Card("4","Clubs",4),
-                new Card("5","Clubs",5),
-                new Card("6","Clubs",6),
-                new Card("7","Clubs",7),
-                new Card("8","Clubs",8),
-                new Card("9","Clubs",9),
-                new Card("10","Clubs",10),
-                new Card("Jack","Clubs",11),
-                new Card("Queen","Clubs",12),
-                new Card("King","Clubs",13),
+        // public void Reset() => cards = new List<Card>()
+        //     {
+        //         
 
-                new Card("Ace","Diamonds",1),
-                new Card("2","Diamonds",2),
-                new Card("3","Diamonds",3),
-                new Card("4","Diamonds",4),
-                new Card("5","Diamonds",5),
-                new Card("6","Diamonds",6),
-                new Card("7","Diamonds",7),
-                new Card("8","Diamonds",8),
-                new Card("9","Diamonds",9),
-                new Card("10","Diamonds",10),
-                new Card("Jack","Diamonds",11),
-                new Card("Queen","Diamonds",12),
-                new Card("King","Diamonds",13),
-
-        };
+        // };
     }
 }

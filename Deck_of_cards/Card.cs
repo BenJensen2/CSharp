@@ -2,9 +2,9 @@ namespace Deck_of_cards
 {
     public class Card
     {
-        string StringVal;
-        string Suit;
-        int Val;
+        public string StringVal;
+        public string Suit;
+        public int Val;
 
         public Card(string stringVal, string suit, int val)
         {
