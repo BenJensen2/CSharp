@@ -6,14 +6,28 @@ namespace HungryNinja
     {
         private int calorieIntake;
         public List<Food> FoodHistory;
-        public bool isFull 
-        {
-            get{return result};
-        }
         public Ninja(){
             calorieIntake = 0;
             FoodHistory = new List<Food>(){};
         }
         
+        public bool IsFull 
+        {
+            get{
+                if (calorieIntake > 1200){
+                    return true;
+                    // string full = "Yes";
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+
+        public void Eat(Food item)
+        {
+            Ninja.calorieIntake = 
+        }
+
     }
 }

@@ -1,0 +1,11 @@
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.2/Boxing_Unboxing.deps.json
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.2/Boxing_Unboxing.runtimeconfig.json
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.2/Boxing_Unboxing.runtimeconfig.dev.json
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.2/Boxing_Unboxing.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.2/Boxing_Unboxing.pdb
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.csprojAssemblyReference.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.csproj.CoreCompileInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.AssemblyInfoInputs.cache
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.AssemblyInfo.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.dll
+/Users/ben/Desktop/Dojo_assignments/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.2/Boxing_Unboxing.pdb

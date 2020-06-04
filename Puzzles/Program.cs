@@ -63,20 +63,42 @@ namespace Puzzles
             return ratio;
         }
 
-        public static string Names()
+        public static List <string> Names()
         {
+            string temp = "";
+            int rand = 0;
             List <string> names = new List<string>();
             names.Add("Todd");
             names.Add("Tiffany");
             names.Add("Charlie");
             names.Add("Geneva");
             names.Add("Sydney");
+
+            for (int i =1;i < names.Count; i++)
+            {
+                Random num = new Random();
+                rand = num.Next(1,names.Count);
+                temp = names[rand];
+                names[rand] = names[i];
+                names[i] = temp;
+
+                Console.WriteLine("i" + names[i]);
+                if (names[i].Length<6)
+                {
+                    names.Remove(names[i]);
+                }
+            }
+
+            
+
+            return names;
         }
         static void Main(string[] args){
             Console.WriteLine("Hello World!");
             RandomArray();
             TossCoin();
             TossMultipleCoins(22);
+            Names();
         }
     }
 }
