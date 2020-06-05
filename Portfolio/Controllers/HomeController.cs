@@ -5,11 +5,15 @@ namespace HelloASP
     public class HomeController : Controller
     {
         [HttpGet("")]
-
-        public ViewResult Razor()
+        public ViewResult AboutMe()
         {
             return View();
         }
+
+        // public ViewResult Razor()
+        // {
+        //     return View();
+        // {
         // public ViewResult HiThere()
         // {
         //     // return "This is my Index!";

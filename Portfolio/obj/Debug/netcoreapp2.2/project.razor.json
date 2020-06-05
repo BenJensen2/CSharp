@@ -2974,6 +2974,11 @@
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/index.cshtml",
       "TargetPath": "Views\\Home\\index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/AboutMe.cshtml",
+      "TargetPath": "Views\\Home\\AboutMe.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
