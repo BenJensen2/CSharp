@@ -24,15 +24,15 @@ namespace HelloASP
         // }
 
         [HttpGet("projects")]
-        public string Projects()
+        public ViewResult Projects()
         {
-            return "These are my Projects!";
+            return View();
         }
 
         [HttpGet("contact")]
-        public string Contact()
+        public ViewResult Contact()
         {
-            return "This is my Contact!";
+            return View();
         }
 
         [Route("hello")]

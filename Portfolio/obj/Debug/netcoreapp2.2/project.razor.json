@@ -2961,6 +2961,11 @@
   "RootNamespace": "Portfolio",
   "Documents": [
     {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/Projects.cshtml",
+      "TargetPath": "Views\\Home\\Projects.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/Razor.cshtml",
       "TargetPath": "Views\\Home\\Razor.cshtml",
       "FileKind": "mvc"
@@ -2978,6 +2983,11 @@
     {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/AboutMe.cshtml",
       "TargetPath": "Views\\Home\\AboutMe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/Views/Home/Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     }
   ],

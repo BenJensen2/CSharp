@@ -24,3 +24,5 @@
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/HiThere.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/Razor.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/AboutMe.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/Contact.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Portfolio/obj/Debug/netcoreapp2.2/Razor/Views/Home/Projects.g.cshtml.cs
