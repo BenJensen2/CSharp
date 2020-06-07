@@ -1,4 +1,5 @@
 using System;
+using Dojo_Survey.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dojo_Survey.Controllers
@@ -12,10 +13,16 @@ namespace Dojo_Survey.Controllers
             return View();
         }
 
-        [HttpGet("/result")]
-        public ViewResult Result()
+        // [HttpGet("/result")]
+        // public ViewResult Result()
+        // {
+        //     return View();
+        // }
+
+        [HttpPost("/result")]
+        public ViewResult Result(Ninja newNinja)
         {
-            return View();
+            return View("Result",newNinja);
         }
 
         // [HttpGet("/travel/{destination}")]

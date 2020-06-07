@@ -2961,6 +2961,11 @@
   "RootNamespace": "Dojo_Survey",
   "Documents": [
     {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/Views/Home/Survey.cshtml",
       "TargetPath": "Views\\Home\\Survey.cshtml",
       "FileKind": "mvc"
