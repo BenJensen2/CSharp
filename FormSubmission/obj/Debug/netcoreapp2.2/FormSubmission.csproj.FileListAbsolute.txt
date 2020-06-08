@@ -28,3 +28,4 @@
 /Users/ben/Desktop/Dojo_assignments/C#/FormSubmission/obj/Debug/netcoreapp2.2/FormSubmission.dll
 /Users/ben/Desktop/Dojo_assignments/C#/FormSubmission/obj/Debug/netcoreapp2.2/FormSubmission.pdb
 /Users/ben/Desktop/Dojo_assignments/C#/FormSubmission/obj/Debug/netcoreapp2.2/FormSubmission.csproj.CopyComplete
+/Users/ben/Desktop/Dojo_assignments/C#/FormSubmission/obj/Debug/netcoreapp2.2/Razor/Views/Home/success.g.cshtml.cs

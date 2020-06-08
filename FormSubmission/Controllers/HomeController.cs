@@ -26,6 +26,7 @@ namespace FormSubmission.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [HttpPost("/register")]
         public IActionResult Register(User user)
         {
             if(ModelState.IsValid)
