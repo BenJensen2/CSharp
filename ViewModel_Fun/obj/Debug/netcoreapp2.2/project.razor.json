@@ -2996,6 +2996,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/Views/Home/SingleUser.cshtml",
+      "TargetPath": "Views\\Home\\SingleUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

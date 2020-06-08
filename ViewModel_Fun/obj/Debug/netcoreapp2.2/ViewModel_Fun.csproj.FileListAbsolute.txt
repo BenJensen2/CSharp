@@ -30,3 +30,5 @@
 /Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/obj/Debug/netcoreapp2.2/ViewModel_Fun.csproj.CopyComplete
 /Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/obj/Debug/netcoreapp2.2/Razor/Views/Home/Message.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/obj/Debug/netcoreapp2.2/Razor/Views/Home/Numbers.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/obj/Debug/netcoreapp2.2/Razor/Views/Home/Users.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/ViewModel_Fun/obj/Debug/netcoreapp2.2/Razor/Views/Home/SingleUser.g.cshtml.cs
