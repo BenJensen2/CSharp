@@ -9,7 +9,7 @@ namespace Dojo_Survey.Controllers
         [HttpGet("")]
         public ViewResult Survey()
         {
-            ViewBag.trello = "Sadie";
+            // ViewBag.trello = "Sadie";
             return View();
         }
 

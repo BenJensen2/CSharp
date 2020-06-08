@@ -1,0 +1,22 @@
+@model List<User>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-4 text-center mb-4">Here are some Users!</h3>
+        <div class="content d-flex align-items-center">
+            <div class="numbers border border-dark" style="width: 150px;">
+                @foreach(var user in Model){
+                    <p>&nbsp @number</p>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

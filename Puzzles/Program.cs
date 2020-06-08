@@ -77,7 +77,7 @@ namespace Puzzles
             for (int i =0;i < names.Count; i++)
             {
                 Random num = new Random();
-                rand = num.Next(1,names.Count);
+                rand = num.Next(0,names.Count);
                 temp = names[rand];
                 names[rand] = names[i];
                 names[i] = temp;
