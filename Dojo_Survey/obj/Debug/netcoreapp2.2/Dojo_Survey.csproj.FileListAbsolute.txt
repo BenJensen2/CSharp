@@ -24,3 +24,4 @@
 /Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.csproj.CopyComplete
 /Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/Dojo_Survey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Submission.g.cshtml.cs

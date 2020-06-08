@@ -25,6 +25,16 @@ namespace Dojo_Survey.Controllers
             return View("Result",newNinja);
         }
 
+        [HttpPost("survey")]
+        public IActionResult Submission(Survey yourSurvey)
+        {
+            // Handle your form submission here
+            return View(yourSurvey);
+            
+        }
+
+
+
         // [HttpGet("/travel/{destination}")]
         // public RedirectToActionResult NotSure(string destination)
         // {
