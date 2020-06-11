@@ -1,0 +1,68 @@
+@model Dish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Add a new Dish!</h1>
+        <div class="row mb-4">
+            <div class="col">
+                <a
+                    asp-controller="CRUD"
+                    asp-action = "Welcome">
+                    Home
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="row">
+                    <label asp-for="ChefName">Chef's Name</label>
+                    <input asp-for="ChefName" type="text">
+                    <span class="text-danger" asp-validation-for="ChefName"></span>
+
+                    <label asp-for="Name">Name of Dish</label>
+                    <input asp-for="Name" type="text">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+
+                    <label asp-for="Calories"># of Calories</label>
+                    <input asp-for="Calories" type="text">
+                    <span class="text-danger" asp-validation-for="Calories"></span>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-2">
+                <label asp-for="Tastiness">Tastiness</label>
+                <select name="" id="">
+                    <option asp-for="Tastiness" value="1">1</option>
+                    <option asp-for="Tastiness" value="2">2</option>
+                    <option asp-for="Tastiness" value="3">3</option>
+                    <option asp-for="Tastiness" value="4">4</option>
+                    <option asp-for="Tastiness" value="5">5</option>
+                </select>
+                <span class="text-danger" asp-validation-for="Tastiness"></span>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <div class="row">
+                    <label asp-for="Description">Description</label>
+                    <textarea class="col-12" asp-for="Description" id="" cols="30" rows="10"></textarea>
+                </div>
+                <a
+                    asp-controller="CRUD"
+                    asp-action = "AddDish"
+                    class="btn btn-primary mt-4">
+                    Add a Dish
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
