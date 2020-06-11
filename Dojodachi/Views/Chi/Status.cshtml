@@ -1,0 +1,58 @@
+@model Chi
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+</head>
+<body>
+    <div class="container p-4">
+        <div class="stats">
+            <div class="row">
+                <div class="col">Fullness: @Model.Fullness</div>
+                <div class="col">Happiness: @Model.Happiness</div>
+                <div class="col">Meals: @Model.Meals</div>
+                <div class="col">Energy: @Model.Energy</div>
+            </div>
+            <div class="row">
+                <div class="col border border-dark" style="height: 500px;">
+                    <div class="row d-flex align-items-center justify-content-center" style="height: 450px;">
+                        <img class="mx-auto" src="~/img/yoda.jpeg" alt="">
+                    </div>
+                    <div class="row">
+                        <p class="col text-center">Display Action</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <a 
+                    asp-controller="Chi"
+                    asp-action = "Feed"
+                    class="btn btn-primary">
+                    Feed
+                </a>
+                <a 
+                    asp-controller="Chi"
+                    asp-action = "Play"
+                    class="btn btn-primary">
+                    Play
+                </a>
+                <a 
+                    asp-controller="Chi"
+                    asp-action = "Work"
+                    class="btn btn-primary">
+                    Work
+                </a>
+                <a 
+                    asp-controller="Chi"
+                    asp-action = "Sleep"
+                    class="btn btn-primary">
+                    Sleep
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

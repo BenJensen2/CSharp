@@ -1,0 +1,50 @@
+@model Survey
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container mt-4 p-4 border border-dark">
+
+        @* <a href="/redirect">Result @ViewBag.trello</a> *@
+        <form asp-action="Create" asp-Controller="Home" method="POST" >
+            <div class="form-group d-flex justify-content-between">
+                <span asp-validation-for ="Name"></span>
+                <label class="col-6" asp-for="Name">Your Name:</label>
+                <input class="col-6" asp-for="Name">
+            </div>
+            <div class="form-group d-flex justify-content-between">
+                <span asp-validation-for="Location"></span>
+                <label class="col-6" asp-for="Location">Dojo Location:</label>
+                <select class="col-6" asp-for="Location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Orange County">Orange County</option>
+                </select>
+            </div>
+            <div class="form-group d-flex justify-content-between">
+                <span asp-validation-for="Language"></span>
+                <label class="col-6" asp-for="Language">Favorite Language:</label>
+                <select class="col-6" asp-for="Language">
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Comment"></span>
+                <p class="col-6" >Comment (optional):</p>
+                <textarea class="col-12" asp-for="Comment" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group d-flex justify-content-end">
+                @* <button class="btn btn-primary">Submit</button> *@
+                <input value="Add Survey" type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
