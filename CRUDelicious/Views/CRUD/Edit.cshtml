@@ -5,13 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add a Dish</title>
+    <title>Edit a Dish</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Add a new Dish!</h1>
+        <h1 class="text-center">Edit Banh Mi Taco</h1>
         <div class="row mb-4">
             <div class="col">
                 <a
@@ -21,7 +21,7 @@
                 </a>
             </div>
         </div>
-        <form asp-action="Create" asp-controller="CRUD" method="POST">
+        <form asp-action="Update" asp-controller="Posts" method="POST">
             <div class="form-group">
                 <div class="row">
                     <div class="col-2">
@@ -42,12 +42,12 @@
                     <div class="col-2"></div>
                     <div class="col-2">
                         <label asp-for="Tastiness">Tastiness</label>
-                        <select asp-for="Tastiness" name="" id="">
-                            <option asp-for="Tastiness" value=1>1</option>
-                            <option asp-for="Tastiness" value=2>2</option>
-                            <option asp-for="Tastiness" value=3>3</option>
-                            <option asp-for="Tastiness" value=4>4</option>
-                            <option asp-for="Tastiness" value=5>5</option>
+                        <select name="" id="">
+                            <option asp-for="Tastiness" value="1">1</option>
+                            <option asp-for="Tastiness" value="2">2</option>
+                            <option asp-for="Tastiness" value="3">3</option>
+                            <option asp-for="Tastiness" value="4">4</option>
+                            <option asp-for="Tastiness" value="5">5</option>
                         </select>
                         <span class="text-danger" asp-validation-for="Tastiness"></span>
                     </div>
@@ -63,7 +63,7 @@
                             class="btn btn-primary mt-4">
                             Add a Dish
                         </a> *@
-                        <button class="mt-4" >Add a Dish</button>
+                        <button class="mt-4" >Edit a Dish</button>
                     </div>
                 </div>
             </div>

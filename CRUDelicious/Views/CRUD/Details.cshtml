@@ -1,0 +1,54 @@
+@model Dish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-1">
+                <a
+                    asp-controller="CRUD"
+                    asp-action = "Welcome">
+                    Home
+                </a>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6" style="border-bottom: solid black;">
+                <h1 class="text-center">Banh Mi Taco</h1>
+                <h3 class="text-center">Sally Stephens</h3>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <p>A new twist on a classic favorite.  Try with some french fries!</p>
+                <p>Calories: 650</p>
+                <p>Tastiness: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-around">
+                <a
+                    asp-controller="CRUD"
+                    asp-action = "Delete"
+                    class="btn btn-danger">
+                    Delete
+                </a>
+                <a
+                    asp-controller="CRUD"
+                    asp-action = "Edit"
+                    class="btn btn-light">
+                    Edit
+                </a>     
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -2961,6 +2961,11 @@
   "RootNamespace": "CRUDelicious",
   "Documents": [
     {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/Views/CRUD/Edit.cshtml",
+      "TargetPath": "Views\\CRUD\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -2993,6 +2998,11 @@
     {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/Views/CRUD/Details.cshtml",
+      "TargetPath": "Views\\CRUD\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

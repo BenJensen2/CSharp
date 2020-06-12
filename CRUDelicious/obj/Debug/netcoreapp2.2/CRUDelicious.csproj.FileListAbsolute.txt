@@ -30,3 +30,5 @@
 /Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/Shared/ValidationScriptsPartial.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/ViewStart.g.cshtml.cs
 /Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/CRUD/New.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/CRUD/Details.g.cshtml.cs
+/Users/ben/Desktop/Dojo_assignments/C#/CRUDelicious/obj/Debug/netcoreapp2.2/Razor/Views/CRUD/Edit.g.cshtml.cs
