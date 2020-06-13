@@ -11,7 +11,8 @@ namespace CRUDelicious.Models
         [Required]
         public string Chef { get; set; }
         [Required]
-        // [Range(1,6,ErrorMessage = "Tastiness must be between 1 and 5")]
+        [Range(1,6,ErrorMessage = "Tastiness must be between 1 and 5")]
+        // asp net dropdown options & validdations select and sect
         public int Tastiness { get; set; }
         [Required]
         [Range(1,int.MaxValue,ErrorMessage = "Calories must be greater than 0")]

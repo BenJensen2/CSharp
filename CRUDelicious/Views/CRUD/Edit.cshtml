@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Edit Banh Mi Taco</h1>
+        <h1 class="text-center">Edit @Model.Name</h1>
         <div class="row mb-4">
             <div class="col">
                 <a
@@ -21,7 +21,7 @@
                 </a>
             </div>
         </div>
-        <form asp-action="Update" asp-controller="Posts" method="POST">
+        <form asp-action="Update" asp-controller="CRUD" asp-route-id="@Model.DishId">
             <div class="form-group">
                 <div class="row">
                     <div class="col-2">
@@ -42,7 +42,7 @@
                     <div class="col-2"></div>
                     <div class="col-2">
                         <label asp-for="Tastiness">Tastiness</label>
-                        <select name="" id="">
+                        <select name="Tastiness" id="">
                             <option asp-for="Tastiness" value="1">1</option>
                             <option asp-for="Tastiness" value="2">2</option>
                             <option asp-for="Tastiness" value="3">3</option>
@@ -56,9 +56,10 @@
                         <div class="row">
                             <label asp-for="Description">Description</label>
                             <textarea class="col-12" asp-for="Description" id="" cols="30" rows="10"></textarea>
+                            <span class="text-danger" asp-validation-for="Description"></span>
                         </div>
                         @* <a
-                            asp-controller="CRUD"
+                            asp-controller="CRUD"   
                             asp-action = "AddDish"
                             class="btn btn-primary mt-4">
                             Add a Dish

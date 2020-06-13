@@ -26,12 +26,12 @@ namespace CRUDelicious
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CRUDContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
+            // services.Configure<CookiePolicyOptions>(options =>
+            // {
+            //     // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //     options.CheckConsentNeeded = context => true;
+            //     options.MinimumSameSitePolicy = SameSiteMode.None;
+            // });
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -50,7 +50,7 @@ namespace CRUDelicious
             }
 
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            // app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {

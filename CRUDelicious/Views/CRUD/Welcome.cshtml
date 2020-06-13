@@ -26,10 +26,11 @@
                             <li>
                                 <a
                                 asp-controller="CRUD"
-                                asp-action="Details">
+                                asp-action="Details"
+                                asp-route-id="@dish.DishId">
                                 @dish.Name
                                 </a>
-                                by Moose Phillips
+                                by @dish.Chef
                             </li>
                         }
                     </ul>

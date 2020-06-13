@@ -42,12 +42,12 @@
                     <div class="col-2"></div>
                     <div class="col-2">
                         <label asp-for="Tastiness">Tastiness</label>
-                        <select asp-for="Tastiness" name="" id="">
-                            <option asp-for="Tastiness" value=1>1</option>
-                            <option asp-for="Tastiness" value=2>2</option>
-                            <option asp-for="Tastiness" value=3>3</option>
-                            <option asp-for="Tastiness" value=4>4</option>
-                            <option asp-for="Tastiness" value=5>5</option>
+                        <select asp-for="Tastiness" name="Tastiness" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                         <span class="text-danger" asp-validation-for="Tastiness"></span>
                     </div>
@@ -56,6 +56,7 @@
                         <div class="row">
                             <label asp-for="Description">Description</label>
                             <textarea class="col-12" asp-for="Description" id="" cols="30" rows="10"></textarea>
+                            <span class="text-danger" asp-validation-for="Description"></span>
                         </div>
                         @* <a
                             asp-controller="CRUD"

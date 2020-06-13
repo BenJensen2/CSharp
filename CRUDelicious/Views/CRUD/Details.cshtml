@@ -21,16 +21,16 @@
             </div>
             <div class="col-2"></div>
             <div class="col-6" style="border-bottom: solid black;">
-                <h1 class="text-center">Banh Mi Taco</h1>
-                <h3 class="text-center">Sally Stephens</h3>
+                <h1 class="text-center">@Model.Name</h1>
+                <h3 class="text-center">@Model.Chef</h3>
             </div>
             <div class="col-3"></div>
         </div>
         <div class="row mt-4">
             <div class="col-12">
-                <p>A new twist on a classic favorite.  Try with some french fries!</p>
-                <p>Calories: 650</p>
-                <p>Tastiness: 4</p>
+                <p>@Model.Description</p>
+                <p>Calories: @Model.Calories</p>
+                <p>Tastiness: @Model.Tastiness</p>
             </div>
         </div>
         <div class="row">
@@ -38,12 +38,14 @@
                 <a
                     asp-controller="CRUD"
                     asp-action = "Delete"
+                    asp-route-id = "@Model.DishId"
                     class="btn btn-danger">
                     Delete
                 </a>
                 <a
                     asp-controller="CRUD"
                     asp-action = "Edit"
+                    asp-route-id = "@Model.DishId"
                     class="btn btn-light">
                     Edit
                 </a>     

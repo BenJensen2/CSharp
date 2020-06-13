@@ -30,34 +30,83 @@ namespace CRUDelicious.Controllers
         [HttpPost("/create")]
         public IActionResult Create(Dish newDish)
         {
+            Console.WriteLine("\n" + newDish.Tastiness +"\n");
+            // string to int ""
             if(ModelState.IsValid == false)
             {
                 return View("New");
             }
             db.Dishes.Add(newDish);
             db.SaveChanges();
-            return RedirectToAction("Details");
+            return RedirectToAction("Details",new {id = newDish.DishId});
         }
 
-        [HttpGet("/1")]
-        public IActionResult Details()
+        [HttpGet("/{id}")]
+        public IActionResult Details(int id)
         {
-            return View();
+            Dish selectedDish = db.Dishes.FirstOrDefault(dish => dish.DishId == id);
+
+            if (selectedDish == null)
+            {
+                return RedirectToAction("Welcome");
+            }
+
+            return View("Details", selectedDish);
         }
-        [HttpPost("/1/delete")]
-        public IActionResult Delete()
+
+
+        [HttpGet("/edit/{id}")]
+        public IActionResult Edit(int id)
         {
+            Dish selectedDish = db.Dishes.FirstOrDefault(dish => dish.DishId == id);
+            if (selectedDish == null)
+            {
+                return RedirectToAction("Details",selectedDish.DishId);
+            }
+            return View("Edit",selectedDish);
+        }
+
+
+        [HttpPost("/edit/{id}/update")]
+        public IActionResult Update(Dish editedDish, int id)
+        {
+            if(ModelState.IsValid == false)
+            {
+                editedDish.DishId = id;
+                return View("Edit",editedDish);
+            }
+            Dish selectedDish = db.Dishes.FirstOrDefault(dish => dish.DishId == id);
+
+            if (selectedDish == null)
+            {
+                return RedirectToAction("Welcome");
+            }
+            
+            selectedDish.Name = editedDish.Name;
+            selectedDish.Chef = editedDish.Chef;
+            selectedDish.Calories = editedDish.Calories;
+            selectedDish.Tastiness = editedDish.Tastiness;
+            selectedDish.Description = editedDish.Description;
+            selectedDish.UpdatedAt = DateTime.Now;
+            
+            db.Dishes.Update(selectedDish);
+            db.SaveChanges();
+
+            return RedirectToAction("Details",new {id = selectedDish.DishId});
+        }
+
+
+        [HttpGet("/{id}/delete")]
+        public IActionResult Delete(int id)
+        {
+            Dish selectedDish = db.Dishes.FirstOrDefault(dish => dish.DishId == id);
+
+            if (selectedDish != null)
+            {
+                db.Dishes.Remove(selectedDish);
+                db.SaveChanges();
+            }
             return RedirectToAction("Welcome");
-        }
-        [HttpGet("edit/1")]
-        public IActionResult Edit()
-        {
-            return View();
-        }
-        [HttpPost("/edit/1/update")]
-        public IActionResult Update()
-        {
-            return RedirectToAction ("Edit");
         }
     }
 }   
