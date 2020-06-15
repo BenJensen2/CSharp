@@ -26,6 +26,7 @@ namespace LoginRegistration
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<LogRegContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
+            services.AddSession();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -51,6 +52,7 @@ namespace LoginRegistration
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
