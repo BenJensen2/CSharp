@@ -1,4 +1,5 @@
-using System;
+ using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -30,6 +31,8 @@ namespace BankAccounts.Models
         [Compare("Password")]
         [DataType(DataType.Password)]
         public string PasswordConfirm { get; set; }
+
+        public List<Account> OwnedAccounts {get; set;}
 
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
         public DateTime CreatedAt {get;set;} = DateTime.Now;

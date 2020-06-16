@@ -4,6 +4,7 @@ using BankAccounts .Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+// using static Microsoft.AspNetCore.Hosting.Internal.HostingApplication;
 
 namespace BankAccounts.Controllers
 {
@@ -59,6 +60,10 @@ namespace BankAccounts.Controllers
             newUser.Password = hasher.HashPassword(newUser, newUser.Password);
 
             db.Users.Add(newUser);
+            Account newAccount = new Account();
+            newAccount.Owner = newUser;
+            newAccount.Balance = 0;
+            db.Accounts.Add(newAccount);
             db.SaveChanges();
 
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
@@ -74,7 +79,7 @@ namespace BankAccounts.Controllers
             Console.WriteLine($"\n {userFname} \n");
             Console.WriteLine($"\n {userLname} \n");
 
-            return RedirectToAction ("Success");
+            return RedirectToAction ("Account","Bank");
         }
 
         [HttpGet("/success")]

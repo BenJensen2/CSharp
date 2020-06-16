@@ -1,0 +1,23 @@
+@model Account
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome @ViewBag.FirstName </h1>
+            </div>
+            <div class="col d-flex align-items-end">
+                <label asp-for="Balance">Current Balance:</label>
+                <output name="Balance" asp-for="Balance">@Model.Balance</output>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

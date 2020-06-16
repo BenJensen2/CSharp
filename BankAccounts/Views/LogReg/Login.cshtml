@@ -12,31 +12,54 @@
     <div class="container">
         <div class="row mt-4 mb-4">
             <div class="col-11">
-                <h1>Login to this Cool Site!</h1>
+                <h1>Login</h1>
             </div>
-            <div class="col-1 d-flex align-items-center">
-                <a
-                    asp-controller= "LogReg"
-                    asp-action = "Register">
-                    Register
-                </a>
+            <div >
+
             </div>
         </div>
-        <form asp-action="SubmitLogin" asp-controller="LogReg">
+    </div>
+
+    <form asp-action="SubmitRegister" asp-controller="LogReg">
             <div class="row">
-                <div class="col-2"> 
-                    <label asp-for="LoginEmail">Email</label>
-                    <input asp-for="LoginEmail">
-                    <span asp-validation-for="LoginEmail" class="text-danger"></span>
+                <div class="col-5">
+                    
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="LoginEmail">Email Address</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="LoginEmail">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="LoginEmail" class="text-danger"></span>
+                        </div>
+                    </div>
+                    
 
-                    <label asp-for="LoginPassword">Password</label>
-                    <input asp-for="LoginPassword">
-                    <span asp-validation-for="LoginPassword" class="text-danger"></span>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="LoginPassword">Password</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="LoginPassword">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="LoginPassword" class="text-danger"></span>
+                        </div>
+                    </div>
 
-                    <button class="mt-4">Sign up Now</button>
+                    <button class="mt-4">Submit</button>
+                </div>
+                @* <div class="col-1"></div> *@
+                <div class="col-2 d-flex align-items-end" style="height: 125px;">
+                    <a
+                    asp-controller= "LogReg"
+                    asp-action = "Register">
+                    Need to Register?
+                    </a>
                 </div>
             </div>
         </form>
-    </div>
 </body>
 </html>

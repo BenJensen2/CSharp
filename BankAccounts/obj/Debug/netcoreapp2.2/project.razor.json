@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/BankAccounts/Views/Bank/Account.cshtml",
+      "TargetPath": "Views\\Bank\\Account.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ben/Desktop/Dojo_assignments/C#/BankAccounts/Views/LogReg/Register.cshtml",
       "TargetPath": "Views\\LogReg\\Register.cshtml",
       "FileKind": "mvc"
