@@ -1,0 +1,97 @@
+@model Wedding
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Weding</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-4">
+            <h1 class="col-8">Plan Your wedding</h1>
+            <div class="col-2 d-flex align-items-center">
+                <a
+                    asp-controller="Wedding"
+                    asp-action = "Dashboard">
+                    Dashboard
+                </a>
+            </div>
+            <div class="col-2 d-flex align-items-center">
+                <a
+                    asp-controller= "LogReg"
+                    asp-action = "Logout">
+                    Logout
+                </a>
+            </div>
+        </div>
+        <form asp-action="Create" asp-controller="Wedding" method="POST">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label asp-for="Wedder1">Wedder One</label>
+                            </div>
+                            <div class="col">
+                                <input asp-for="Wedder1">
+                            </div>
+                            <div class="col">
+                                <span asp-validation-for="Wedder1" class="text-danger"></span>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label asp-for="Wedder2">Wedder Two</label>
+                            </div>
+                            <div class="col">
+                                <input asp-for="Wedder2">
+                            </div>
+                            <div class="col">
+                                <span asp-validation-for="Wedder2" class="text-danger"></span>
+                            </div>
+                        </div>
+    
+                        
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label asp-for="Date">Date</label>
+                            </div>
+                            <div class="col">
+                                <input asp-for="Date" type="date">
+                            </div>
+                            <div class="col">
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+    
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label asp-for="Address">Wedding Address</label>
+                            </div>
+                            <div class="col">
+                                <input asp-for="Address">
+                            </div>
+                            <div class="col">
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+                        <button class="mt-4 btn btn-success" >Create</button>
+                        @* <a
+                            asp-controller= "Wedding"
+                            asp-action = "Create"
+                            class="btn btn-success">
+                            Create
+                        </a> *@
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

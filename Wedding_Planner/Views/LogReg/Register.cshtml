@@ -1,0 +1,95 @@
+@model User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    @* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> *@
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-11">
+                <h1>Register</h1>
+            </div>
+            <div >
+
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="SubmitRegister" asp-controller="LogReg">
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="FirstName">First Name</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="FirstName">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="LastName">Last Name</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="LastName">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="Email">Email Address</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="Email">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="Password">Password</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="Password">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label asp-for="PasswordConfirm">Confirm Password</label>
+                        </div>
+                        <div class="col">
+                            <input asp-for="PasswordConfirm">
+                        </div>
+                        <div class="col">
+                            <span asp-validation-for="PasswordConfirm" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <button class="mt-4">Submit</button>
+                </div>
+            </div>
+        </form>
+</body>
+</html>

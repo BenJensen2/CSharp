@@ -1,0 +1,63 @@
+@model Dashboard
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-11">
+                <h1>Welcome to the Wedding Planner</h1>
+            </div>
+            <div class="col-1 d-flex align-items-center">
+                <a
+                    asp-controller= "LogReg"
+                    asp-action = "Logout">
+                    Logout
+                </a>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guest</th>
+                <th>Action</th>
+            </tr>
+            @foreach (Wedding wedding in Model.allWeddings)
+            {
+                <tr>
+                    <td>
+                        <a
+                            asp-controller= "Wedding"
+                            asp-action = "Details"
+                            asp-route-id ="@wedding.WeddingId">
+                            @wedding.Wedder1 & @wedding.Wedder2
+                        </a>
+                    </td>
+                    <td>@wedding.Date</td>
+                    <td>@wedding.GuestList.Count</td>
+                    <td>
+                        <a
+                            asp-controller= "Wedding"
+                            asp-action = "RSVP"
+                            asp-route-id="@wedding.WeddingId">
+                            RSVP
+                        </a>
+                    </td>
+                </tr>
+            }
+        </table>
+        <a
+            asp-controller= "Wedding"
+            asp-action = "New"
+            class="btn btn-success">
+            New Wedding
+        </a>
+    </div>
+</body>
+</html>
