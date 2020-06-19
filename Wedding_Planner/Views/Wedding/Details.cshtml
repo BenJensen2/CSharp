@@ -1,4 +1,4 @@
-@model Wedding
+@model ViewModel
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row mb-4">
-            <h1 class="col-8">@Model.Wedder1 and @Model.Wedder2 's Wedding</h1>
+            <h1 class="col-8">@Model.Wedding.Wedder1 and @Model.Wedding.Wedder2 's Wedding</h1>
             <div class="col-2 d-flex align-items-center">
                 <a
                     asp-controller="Wedding"
@@ -26,10 +26,13 @@
                 </a>
             </div>
         </div>
-        <h2>Date: @Model.Date</h2>
+        <h2>Date: @Model.Wedding.Date</h2>
         <h2>Guests:</h2>
         <ul>
-            <li>Oscar Nunez</li>
+            @foreach (RSVP rsvp in Model.Wedding.GuestList)
+            {
+                <li>@rsvp.Guest.FirstName @rsvp.Guest.LastName</li>
+            }
         </ul>
     </div>
 </body>

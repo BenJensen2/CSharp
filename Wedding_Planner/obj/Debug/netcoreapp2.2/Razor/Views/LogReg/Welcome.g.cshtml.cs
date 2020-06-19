@@ -23,8 +23,13 @@ using Wedding_Planner.Models;
 
 #line default
 #line hidden
+#line 4 "/Users/ben/Desktop/Dojo_assignments/C#/Wedding_Planner/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a36f787098217af8cc7a51635b0bd1fded4b5217", @"/Views/LogReg/Welcome.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"84b0732bfebbac067a62d1314c0d18406fc96ec4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61660e462a4c433e5836dbca685751e7350ec3af", @"/Views/_ViewImports.cshtml")]
     public class Views_LogReg_Welcome : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "Register", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -57,7 +62,7 @@ using Wedding_Planner.Models;
             WriteLiteral("<!DOCTYPE html>\n<html lang=\"en\">\n");
             EndContext();
             BeginContext(33, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a36f787098217af8cc7a51635b0bd1fded4b52174055", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a36f787098217af8cc7a51635b0bd1fded4b52174207", async() => {
                 BeginContext(39, 130, true);
                 WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome</title>\n");
                 EndContext();
@@ -77,12 +82,12 @@ using Wedding_Planner.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(177, 275, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a36f787098217af8cc7a51635b0bd1fded4b52175351", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a36f787098217af8cc7a51635b0bd1fded4b52175503", async() => {
                 BeginContext(183, 101, true);
                 WriteLiteral("\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col\">\n                ");
                 EndContext();
                 BeginContext(284, 26, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a36f787098217af8cc7a51635b0bd1fded4b52175836", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a36f787098217af8cc7a51635b0bd1fded4b52175988", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -101,7 +106,7 @@ using Wedding_Planner.Models;
                 WriteLiteral("\n            </div>\n            <div class=\"col\">\n                ");
                 EndContext();
                 BeginContext(376, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a36f787098217af8cc7a51635b0bd1fded4b52177215", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a36f787098217af8cc7a51635b0bd1fded4b52177367", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

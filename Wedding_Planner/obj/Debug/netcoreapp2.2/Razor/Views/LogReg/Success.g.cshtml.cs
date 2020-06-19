@@ -23,8 +23,13 @@ using Wedding_Planner.Models;
 
 #line default
 #line hidden
+#line 4 "/Users/ben/Desktop/Dojo_assignments/C#/Wedding_Planner/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"59f525b473c74cd43e44110975797641f15b99bd", @"/Views/LogReg/Success.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"84b0732bfebbac067a62d1314c0d18406fc96ec4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"61660e462a4c433e5836dbca685751e7350ec3af", @"/Views/_ViewImports.cshtml")]
     public class Views_LogReg_Success : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<User>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "LogReg", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -57,7 +62,7 @@ using Wedding_Planner.Models;
             WriteLiteral("\n<!DOCTYPE html>\n<html lang=\"en\">\n");
             EndContext();
             BeginContext(46, 366, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd4068", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd4220", async() => {
                 BeginContext(52, 131, true);
                 WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Register</title>\n");
                 EndContext();
@@ -77,12 +82,12 @@ using Wedding_Planner.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(413, 617, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd5365", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd5517", async() => {
                 BeginContext(419, 178, true);
                 WriteLiteral("\n    <div class=\"container\">\n        <div class=\"row mt-4 mb-4\">\n            <div class=\"col-11\"></div>\n            <div class=\"col-1 d-flex align-items-center\">\n                ");
                 EndContext();
                 BeginContext(597, 138, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd5931", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59f525b473c74cd43e44110975797641f15b99bd6083", async() => {
                     BeginContext(687, 44, true);
                     WriteLiteral("\n                    Logout\n                ");
                     EndContext();

@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Wedding_Planner.Models;
 
 namespace Wedding_Planner.Migrations
 {
     [DbContext(typeof(WeddingContext))]
-    partial class WeddingContextModelSnapshot : ModelSnapshot
+    [Migration("20200618221106_ViewModelLoggedUserRSVP")]
+    partial class ViewModelLoggedUserRSVP
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,9 +79,9 @@ namespace Wedding_Planner.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<DateTime>("UpdatedAt");
+                    b.Property<int?>("PlannerUserId");
 
-                    b.Property<int>("UserId");
+                    b.Property<DateTime>("UpdatedAt");
 
                     b.Property<string>("Wedder1")
                         .IsRequired();
@@ -87,11 +89,9 @@ namespace Wedding_Planner.Migrations
                     b.Property<string>("Wedder2")
                         .IsRequired();
 
-                    b.Property<bool>("loggedUserRSVPed");
-
                     b.HasKey("WeddingId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("PlannerUserId");
 
                     b.ToTable("Weddings");
                 });
@@ -112,9 +112,8 @@ namespace Wedding_Planner.Migrations
             modelBuilder.Entity("Wedding_Planner.Models.Wedding", b =>
                 {
                     b.HasOne("Wedding_Planner.Models.User", "Planner")
-                        .WithMany("WeddingsPlanned")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("PlannerUserId");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,9 @@
-@model Dashboard
+@model ViewModel
+
+@{
+  int? uid = Context.Session.GetInt32("UserId");
+  string action = "";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,14 +44,34 @@
                             @wedding.Wedder1 & @wedding.Wedder2
                         </a>
                     </td>
-                    <td>@wedding.Date</td>
+                    <td>@wedding.Date</td> 
+                    @* Format better *@
                     <td>@wedding.GuestList.Count</td>
+                    @* Action Link *@
                     <td>
+                        @if(wedding.UserId == (int)uid)
+                        {
+                            action = "Delete";
+                        }
+                        else
+                        {
+                            @foreach(RSVP rsvp in wedding.GuestList)
+                            {
+                                @if(rsvp.Guest.UserId == (int)uid)
+                                {
+                                    action = "unRSVP";
+                                }
+                                else
+                                {
+                                    action = "RSVP";
+                                }
+                            }
+                        }
                         <a
                             asp-controller= "Wedding"
-                            asp-action = "RSVP"
+                            asp-action = "@action"
                             asp-route-id="@wedding.WeddingId">
-                            RSVP
+                            @action
                         </a>
                     </td>
                 </tr>

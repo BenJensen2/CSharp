@@ -33,6 +33,7 @@ namespace CSharp.Controllers
 
 // Returns user ID if logged in: 
 //   - If uid does not = null
+//      - Would not return if uid = null
         private bool isLoggedIn
         {
             get
@@ -82,7 +83,7 @@ namespace CSharp.Controllers
             HttpContext.Session.SetString("FirstName", newUser.FirstName);
             HttpContext.Session.SetString("LastName", newUser.LastName);
 
-// Redirects to the success page
+// Redirects to the Dashboard
             return RedirectToAction ("Dashboard","Wedding");
         }
 
