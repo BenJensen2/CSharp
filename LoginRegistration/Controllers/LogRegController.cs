@@ -11,7 +11,6 @@ namespace LoginRegistration.Controllers
     {
         private LogRegContext db;
      
-        // here we can "inject" our context service into the constructor
         public LogRegController(LogRegContext context)
         {
             db = context;
@@ -66,6 +65,7 @@ namespace LoginRegistration.Controllers
             HttpContext.Session.SetString("FirstName", newUser.FirstName);
             HttpContext.Session.SetString("LastName", newUser.LastName);
 
+            // Used to create a nullable integer
             int? userId = HttpContext.Session.GetInt32("UserAge");
             string userFname = HttpContext.Session.GetString("FirstName");
             string userLname = HttpContext.Session.GetString("LastName");

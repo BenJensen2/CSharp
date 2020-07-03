@@ -15,18 +15,23 @@ namespace CRUDelicious.Controllers
         {
             db = context;
         }
+        
+        
         [HttpGet("")]
         public IActionResult Welcome()
         {
             List<Dish> allDishes = db.Dishes.ToList();
             return View("Welcome",allDishes);
         }
+
+        
         [HttpGet("/new")]
         public IActionResult New()
         {
             return View();
         }
 
+        
         [HttpPost("/create")]
         public IActionResult Create(Dish newDish)
         {
@@ -41,6 +46,7 @@ namespace CRUDelicious.Controllers
             return RedirectToAction("Details",new {id = newDish.DishId});
         }
 
+        
         [HttpGet("/{id}")]
         public IActionResult Details(int id)
         {
@@ -55,6 +61,7 @@ namespace CRUDelicious.Controllers
         }
 
 
+        
         [HttpGet("/edit/{id}")]
         public IActionResult Edit(int id)
         {

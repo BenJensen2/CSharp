@@ -119,20 +119,6 @@ namespace Wedding_Planner.Controllers
                 .ThenInclude(rsvp => rsvp.Guest)
 //  Creates Query into list
                 .ToList();
-//  Loop through each wedding
-            foreach(Wedding wedding in weddingList)
-            {
-//  Loop through each RSVP in the wedding
-                foreach(RSVP rsvp in wedding.GuestList)
-                {
-                    // TODO Transfer to View side
-//  - see if logged in user is RSVPed to the wedding & store it
-                    if(rsvp.UserId == uid)
-                    {
-                        wedding.loggedUserRSVPed = true;
-                    }
-                }
-            }
    
 //  Adds weddingList to Dashboard ViewModel
             dashboardWeddings.allWeddings = weddingList;
